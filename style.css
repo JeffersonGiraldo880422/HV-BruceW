@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #94D9EA;
+    background-color: #074555;
 }
 
 .contenido_principal{
@@ -81,7 +81,7 @@ body{
     align-items: center;
     color: #718096;
 }
-.info_contacto ul li p{
+.info_contacto ul li i{
     padding-right: 1rem;
     font-size: 1.2rem;
     color: #2D9CDB;
@@ -137,4 +137,141 @@ body{
 
 .progreso_hab5{
     width: 100%;
+}
+
+.subtitulo{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #f7f7f7;
+}
+
+.sub_para{
+    color: #ccc;
+    padding: .4rem 0;
+}
+
+.seccion_referencias li{
+    color: #ccc;
+    padding: .2rem 0;
+}
+
+.seccion_referencias li i{
+    padding-right: .5rem;
+    font-size: 1.2rem;
+    color: #2D9CDB;
+}
+
+.contenido_derecha{
+    padding: 2rem 3rem;
+}
+
+.titulo_derecha{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2F80ED;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.titulo_derecha::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .2rem;
+    background-color: #ccc;
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.para{
+    line-height: 1.6rem;
+    color: #718096;
+    font-size: 1.1rem;
+}
+
+.seccion{
+    padding-bottom: 2rem;
+}
+
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.titulo_tl{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #002333;
+    text-transform: uppercase;
+}
+
+.titulo_2_tl{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #2D9CDB;
+    text-transform: uppercase;
+}
+
+.contenido_tl{
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.titulo_2_tl::before{
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    background-color: #2D9CDB;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+}
+
+/*Media Querries*/
+@media screen and (max-width:823px){
+    .titulo_derecha::after{
+        width: 40%;
+    }
+}
+@media screen and (max-width:681px){
+    .titulo_derecha::after{
+        width: 30%;
+    }
+}
+@media screen and (max-width:780px){
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:780px){
+    .seccion_izquierda{
+        grid-column: span 3;
+    }
+    .seccion_derecha{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:1200px){
+    .contenido_principal{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .personal_info img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:700px){
+    .personal_info img{
+        width: 60%;
+    }
+}
+@media screen and (max-width:390px){
+    .nombre{
+        font-size: 1.5rem;
+    }
 }

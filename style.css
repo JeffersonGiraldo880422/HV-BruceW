@@ -63,7 +63,7 @@ body{
     padding-bottom: 1rem;
 }
 
-.titulo_contacto{
+.titulo_ppal{
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -85,4 +85,56 @@ body{
     padding-right: 1rem;
     font-size: 1.2rem;
     color: #2D9CDB;
+}
+
+.titulo_habilidades{
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-size: 1rem;
+}
+
+.seccion_habilidades ul{
+    padding-top: 2rem;
+}
+
+.seccion_habilidades ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .4rem 0;
+}
+
+.barra_progreso{
+    width: 100%;
+    height: .4rem;
+    background-color: #2f81ed5b;
+    position: relative;
+    border-radius: 12px;
+}
+
+.progreso{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #2D9CDB;
+    border-radius: 12px;
+}
+
+.progreso_hab1{
+    width: 70%;
+}
+
+.progreso_hab2{
+    width: 80%;
+}
+
+.progreso_hab3{
+    width: 90%;
+}
+
+.progreso_hab4{
+    width: 95%;
+}
+
+.progreso_hab5{
+    width: 100%;
 }

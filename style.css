@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #94D9EA;
+}
+
+.contenido_principal{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.seccion_izquierda{
+    grid-column: span 2;
+    height: 100%;
+    background-color: #00324A;
+}
+
+.contenido_izquierda{
+    padding: 2rem 3rem;
+}
+
+.personal_info{
+    width: 100%;
+    border-bottom: 1px solid #002333;
+}
+
+.imagen{
+    width: 100%;
+    text-align: center;
+}
+
+.imagen img{
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid #002333;
+    
+}
+
+.nombre{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+
+.profesion{
+    font-size: 1.2rem;
+    color: #94D9EA;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+.titulo_contacto{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f7f7f7ec;
+    padding-top: 3rem;
+}
+
+.info_contacto ul{
+    padding-top: 2rem;
+}
+
+.info_contacto ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #718096;
+}
+.info_contacto ul li p{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: #2D9CDB;
+}

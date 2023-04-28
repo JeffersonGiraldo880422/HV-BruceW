@@ -162,6 +162,12 @@ body{
     color: #2D9CDB;
 }
 
+.seccion_derecha{
+    grid-column: span 5;
+    height: 100%;
+    background-color: #ffffff;
+}
+
 .contenido_derecha{
     padding: 2rem 3rem;
 }
@@ -190,6 +196,7 @@ body{
     line-height: 1.6rem;
     color: #718096;
     font-size: 1.1rem;
+    text-align: justify;
 }
 
 .seccion{
